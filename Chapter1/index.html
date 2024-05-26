@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React with HTML</title>
+  </head>
+  <body>
+    <!-- Hooo -->
+    <div id="root">
+      <!-- While Rendering Child Element inside React. It will override all the all elements-->
+      <h1 class="child">Hiiii</h1>
+      <h1 class="child">Hiiii</h1>
+      <h1 class="child">Hiiii</h1>
+      <h1 class="child">Hiiii</h1>
+      <h1 class="child">Hiiii</h1>
+    </div>
+  </body>
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+  <!-- <script src="./reactScript.js"></script> -->
+  <script>
+    const heading = React.createElement("h1", {}, "Namaste React");
+    // const root = ReactDOM.createRoot(document.getElementById('root'))
+    // root.render(heading)
+
+    /**
+     * ! div>h2*2
+     */
+    const smallHeading1 = React.createElement(
+      "h3",
+      { id: "heading1" },
+      "My Heading1"
+    );
+    const smallHeading2 = React.createElement(
+      "h3",
+      { id: "heading2" },
+      "My Heading2"
+    );
+    const parentDiv = React.createElement(
+      "div",
+      {
+        className: "parenDiv",
+      },
+      [smallHeading1, smallHeading2]
+    );
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(parentDiv);
+
+
+    /**
+     * ! OR
+     */
+
+     const parenDivDup = React.createElement('div',{className:"by DOC"},
+        "By Documentation",
+        // React.createElement('h2',null, "Doc1"),
+        // React.createElement('h2', null, "Doc2")
+        smallHeading1, smallHeading2
+     )
+     root.render(parenDivDup)
+  </script>
+</html>
