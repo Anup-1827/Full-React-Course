@@ -22,6 +22,11 @@
 -- Enable HTTPs on development mode<br/>
 -- <b>We should always put .parcel-cache in .gitignore file</b><br/>
 -- Consistent Hashing Algorithm <br/>
--- Zero Configuration
---  
+-- Zero Configuration<br/>
+-- Tree Shaking --> Removing unwanted code
+
+
+<h1>Parcel comes with Babel
+</h1>
+
 
