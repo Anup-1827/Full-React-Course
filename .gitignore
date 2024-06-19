@@ -11,4 +11,7 @@
 
 /Chapter6-IMP_ReactSetWithBabel/node_modules
 /Chapter6-IMP_ReactSetWithBabel/lib/node_modules
-# /Chapter6-IMP_ReactSetWithBabel/
+
+/Chapter6-LetsGetHooked/node_modules
+/Chapter6-LetsGetHooked/.parcel-cache
+/Chapter6-LetsGetHooked/dist
