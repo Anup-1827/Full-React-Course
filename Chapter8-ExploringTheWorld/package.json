@@ -1,0 +1,23 @@
+{
+  "name": "chapter8-exploringtheworld",
+  "version": "1.0.0",
+  "description": "1. There are two type of Services --> Monolithic Architecture --> Microservice Architecture\r 2. Monolithic Arch --> All the services are written in the same project like UI, Backend, Notification, Authentication, etc.\r 2. (a) If there is any change in one service the whole project needs to be deployed\r 2. (b) Only single repository needs to be maintianed\r 3. Microservices Architecture --> Project is covertered into small services like UI, Backend, Notification, Authentication, etc.\r 3. (a) All Services can be written into different langauages according to the usecase\r 3. (b) Easy to maintain",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
