@@ -31,3 +31,8 @@
 /Chapter12_13-JoDikhtaHaiVoBikataHai/node_modules
 /Chapter12_13-JoDikhtaHaiVoBikataHai/.parcel-cache
 /Chapter12_13-JoDikhtaHaiVoBikataHai/dist
+
+/Chapter15_Jest/node_modules
+/Chapter15_Jest/.parcel-cache
+/Chapter15_Jest/dist
+/Chapter15_Jest/coverage
