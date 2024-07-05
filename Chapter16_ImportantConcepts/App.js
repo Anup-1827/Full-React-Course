@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
-import { HOCRoute } from "./route";
+import { HOCRoute, UseMemoRoute } from "./route";
 
 function App() {
   const { pathname } = useLocation()
@@ -11,6 +11,7 @@ function App() {
         {[
           { path: "/", name: "Home" },
           { path: HOCRoute, name: "Higher Order Comp" },
+          { path: UseMemoRoute, name: "Use Memo" },
         ].map((route, _idx) => {
           return <Link key={_idx} to={route.path}>{route.name}</Link>;
         })}

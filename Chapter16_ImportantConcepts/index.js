@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import App from "./App"
 import HigherOrderComp from "./Components/_1_HigherOrderComp"
-import { HOCRoute } from "./route"
+import { HOCRoute, UseMemoRoute } from "./route"
+import UseMemo from "./Components/_2_UseMemo"
 
 const RouterComponent = ()=>{
     const router = createBrowserRouter([
@@ -14,7 +15,12 @@ const RouterComponent = ()=>{
             {
                 path: HOCRoute,
                 element: <HigherOrderComp/>
-            }
+            },
+            {
+                path: UseMemoRoute,
+                element: <UseMemo/>
+            },
+
         ]
       }
     ])
