@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
-import { HOCRoute, UseCallbackRoute, UseMemoRoute } from "./route";
+import { HOCRoute, LazyLoadRoute, UseCallbackRoute, UseMemoRoute } from "./route";
 
 function App() {
   const { pathname } = useLocation()
@@ -13,6 +13,7 @@ function App() {
           { path: HOCRoute, name: "Higher Order Comp" },
           { path: UseMemoRoute, name: "Use Memo" },
           { path: UseCallbackRoute, name: "Use Callback" },
+          { path: LazyLoadRoute, name: "Lazy Load" },
         ].map((route, _idx) => {
           return <Link key={_idx} to={route.path}>{route.name}</Link>;
         })}
