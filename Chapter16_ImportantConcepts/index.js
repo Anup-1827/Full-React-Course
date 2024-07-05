@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import App from "./App"
 import HigherOrderComp from "./Components/_1_HigherOrderComp"
-import { HOCRoute, UseMemoRoute } from "./route"
+import { HOCRoute, UseCallbackRoute, UseMemoRoute } from "./route"
 import UseMemo from "./Components/_2_UseMemo"
+import UseCallback from "./Components/_3_UseCallback"
 
 const RouterComponent = ()=>{
     const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const RouterComponent = ()=>{
                 path: UseMemoRoute,
                 element: <UseMemo/>
             },
+            {   
+                path: UseCallbackRoute,
+                element: <UseCallback/>
+            }
 
         ]
       }
