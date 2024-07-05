@@ -36,3 +36,7 @@
 /Chapter15_Jest/.parcel-cache
 /Chapter15_Jest/dist
 /Chapter15_Jest/coverage
+
+/Chapter16_ImportantConcepts/node_modules
+/Chapter16_ImportantConcepts/.parcel-cache
+/Chapter16_ImportantConcepts/dist
