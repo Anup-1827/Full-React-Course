@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import App from "./App"
 import HigherOrderComp from "./Components/_1_HigherOrderComp"
-import { HOCRoute, LazyLoadRoute, UseCallbackRoute, UseMemoRoute } from "./route"
+import { HOCRoute, LazyLoadRoute, UseCallbackRoute, UseMemoRoute, UseReducerRoute } from "./route"
 import UseMemo from "./Components/_2_UseMemo"
 import UseCallback from "./Components/_3_UseCallback"
+import UseReducer from "./Components/_5_UseReducer"
 // import LazyLoad from "./Components/_4_LazyLoad"
 
 
@@ -36,7 +37,10 @@ const RouterComponent = ()=>{
                     <LazyLoadComp/>
                 </Suspense>
             },
-
+            {
+                path: UseReducerRoute,
+                element: <UseReducer/>
+            }
         ]
       }
     ])
