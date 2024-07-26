@@ -20,12 +20,12 @@
 <ul>
 <li>React does all sort of asynchronous things behind the scenes that aren't visible to the user</li>
 <li>React can pause work, prioritize work or may even discard it in this phase</li>
-<li>In this phase, react process all of the Fibers, which represents unit of work </li>
-<li>Internal function beginWork() and commitWork() is being called</li>
+<li>During this phase, react process all of the Fibers, which represents unit of work </li>
+<li>Internal function beginWork() and completeWork() is being called</li>
 </ul>
 
 <b>Commit Phase</b>
-<ul>
+<ul>  
 <li>This phase is synchronous and can not be interupted</li>
 </ul>
 
@@ -53,10 +53,12 @@ fiberNode{
 <ul>
 <li>React Fiber always has 1 to 1 relationship with instance of React Component</li>
 <li>"type of" something is stored inside the tag property. It is a number from 0 to 24</li>
-<li>The stateNode refer to component instance a fiber belongs to</li>
+<li>The stateNode refer to component instance a fiber belongs to. Using this property React can access the state associated with fiber</li>
 <li>child and sibling point to other fibers with respect to the current fiber node.</li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
 </ul>
+
+**Fibers are quit similar to ReactElement. Which is partially true**   
+   - React element and fiber contain similar properties like *type* and *key*  
+   - The main difference is React element are always recreated everytime. Where as React Fiber are reused as often as possible
+   - React Fiber are mostly created once while mounting
+   - Function Like *createFiberFromElement(), createFiberFromFragment(), createFiberFromText()* are used in Source Code
