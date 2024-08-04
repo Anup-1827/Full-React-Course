@@ -28,5 +28,5 @@ const MainComponent = ()=>(
 )
 
 const root =  ReactDOM.createRoot(document.getElementById("root"))
-// root.render(<MainComponent/>)
-root.render(MainComponent())
+root.render(<MainComponent/>)
+// root.render(MainComponent())

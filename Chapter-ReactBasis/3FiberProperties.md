@@ -41,3 +41,10 @@
 - These activity is called side effects, so where these effects are coming from
 - These effects can affect the other components, so they can not be executed during the render phase
 - Effect is also a type of work so this type of work is heavily depends upon the Fiber 
+- Method like render() and shouldComponentUpdate() are the part of render phase
+- Effects are tracked using properties like <b>firstEffect, nextEffect, lastEffect, etc</b>
+- During commit phase, React goes through all Effects and applies them to component instance
+- This result in changes visible to the user
+
+**Fiber processes units of work processed by calling functions like `beginWork()` and `completeWork()`. React steps into Fiber by calling beginWork() and keeps stepping until it reaches a Fiber without children. Compelete that Fiber by calling `completeWork()`**
+
