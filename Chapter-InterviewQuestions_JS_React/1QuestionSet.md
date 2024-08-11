@@ -34,3 +34,7 @@
 - ***run command `npm run build:development`***
 
 ----    
+
+### What are the disadvantages of using JSON.parese and JSON.stringfy ?
+---
+### What are the 
